@@ -1,0 +1,15 @@
+.FilterPosts {
+    font-size: 12rem;
+    display: flex;
+    justify-content: end;
+}
+
+.FilterPosts__popover {
+    font-size: 12rem;
+}
+
+.FilterPosts__option {
+    margin: 0;
+    padding: .25rem .5rem;
+    white-space: nowrap;
+}
