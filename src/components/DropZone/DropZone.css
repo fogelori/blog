@@ -1,0 +1,47 @@
+/* .upload-file {
+  width: 300px;
+} */
+
+.drop-zone {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-size: 13px;
+  padding-bottom: 20px;
+  border-width: 2px;
+  border-radius: 20px;
+  border-color: #4267b2;
+  border-style: dashed;
+  background-color: #f5f8ff;
+  color: #bdbdbd;
+  outline: none;
+  transition: opacity 0.24s ease-in-out;
+}
+
+.drop-zone--isDragZoneFilled {
+  flex-direction: row;
+  padding-top: 20px;
+}
+
+.drop-zone--isDragActive {
+  /* border-color: #2196f3; */
+  opacity: 0.6;
+}
+
+.drop-zone__img {
+  width: 100px;
+}
+
+.drop-zone__img-uploaded {
+  width: 48px;
+  height: 48px;
+  padding-right: 4px;
+}
+
+.drop-zone__filename {
+  color: #444444;
+  font-size: 18px;
+  font-weight: bold;
+  padding-right: 4px;
+}

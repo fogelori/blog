@@ -1,0 +1,13 @@
+.menu__ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+@media screen and (max-width: 600px) {
+  .menu__ul--clicked {
+    display: flex;
+    flex-direction: column;
+  }
+}

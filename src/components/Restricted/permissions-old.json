@@ -1,0 +1,23 @@
+{
+    "path": "",
+    "actions": {
+    },
+    "children": {
+        "posts": {
+            "path": "",
+            "actions": {},
+            "children": {
+                "allposts": {
+                    "components": {
+                        "ShortPost": {
+                            "actions":{
+                                "addPost": true,
+                                "removePost": true                        
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

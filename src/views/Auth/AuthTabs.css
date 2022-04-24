@@ -1,0 +1,12 @@
+.auth-tabs{
+  max-width: 300px;
+}
+
+.auth-tabs__TabList {
+  font-size: 12rem;
+  justify-content: center;
+}
+
+.auth-tabs__Tab {
+  flex-grow: 1;
+}

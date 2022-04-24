@@ -1,0 +1,32 @@
+.post__header-properties {
+  border-top: 1px dotted rgb(235, 235, 235);
+  border-bottom: 1px dotted rgb(235, 235, 235);
+  padding: 5px 0;
+  color: #979797;
+  font-size: 13rem;
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+  /* vertical-align: bottom; */
+  /* align-items: center; */
+}
+.post__header-span {
+  display: inline-block;
+  padding-inline-end: 10px;
+  /* vertical-align: bottom; */
+  /* vertical-align: middle; */
+  /* width: 400px;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-content: space-evenly; */
+}
+
+.post__svg {
+  vertical-align: bottom;
+  font-size: 16rem;
+  width: 1em;
+  height: 1em;
+  fill: currentColor;
+  overflow: hidden;
+}
+
+.post__body {
+  font-size: 16rem;
+}

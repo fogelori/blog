@@ -1,0 +1,5 @@
+{
+    "short-post--editpost": ["editor"],
+    "short-post--deletepost": ["editor"],
+    "allposts--addpost": ["editor"]
+}

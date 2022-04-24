@@ -1,0 +1,33 @@
+.button {
+  background-color: #04aa6d;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  /* width: 100%; */
+  opacity: 0.9;
+}
+
+.button:hover {
+  opacity: 1;
+}
+
+/* Add a color to the cancel button */
+.button--regular {
+  background-color: #ccc;
+  color: black;
+}
+
+/* Add a color to the delete button */
+.button--danger {
+  background-color: #f44336;
+}
+
+/* Change styles for cancel button and delete button on extra small screens */
+@media screen and (max-width: 300px) {
+  .button--regular,
+  .button--danger {
+    width: 100%;
+  }
+}
