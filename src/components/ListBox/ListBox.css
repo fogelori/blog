@@ -1,0 +1,23 @@
+.ListBox {
+    padding: 0;
+    min-width: 50px;
+    position: relative;
+    font-size: 10rem;
+}
+
+.ListBox__title {
+    font-size: 1em;
+    color: gray;
+    padding-left: 2px;
+    padding-right: 2px;
+}
+
+.ListBox__select, .ListBox__select:focus {
+    position: relative;
+    top: -2px;
+    background-color: transparent;
+    border:0;
+    padding: 3px;
+    outline: none;
+    min-width: 80px;
+}

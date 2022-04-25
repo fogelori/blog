@@ -1,47 +1,26 @@
 import React from "react";
-import {
-  Listbox,
-  ListboxInput,
-  ListboxButton,
-  ListboxPopover,
-  ListboxList,
-  ListboxOption,
-} from "@reach/listbox";
-import "@reach/listbox/styles.css";
+import ListBox from "../../../../../components/ListBox/ListBox";
+import ListBoxOption from "../../../../../components/ListBox/components/ListBoxOption/ListBoxOption";
 import "./FilterPosts.css";
 
 function FilterPosts(props) {
   //   let labelId = `taco-label--${useId()}`;
   return (
     <div className="FilterPosts">
-      <ListboxInput
-        // aria-labelledby={labelId}
+      <ListBox
         value={props.value}
-        onChange={(value) => props.setValue(value)}
+        onChange={(e) => props.setValue(e.target.value)}
+        className="FilterPosts__select"
       >
-        <ListboxButton arrow="▼" />
-        <ListboxPopover className="FilterPosts__popover">
-          <ListboxList>
-            <ListboxOption className="FilterPosts__option" value="All">
-              Filter by Category
-            </ListboxOption>
-            {props.categories.map((category) => (
-              <ListboxOption className="FilterPosts__option" value={category}>
-                {category}
-              </ListboxOption>
-            ))}
-          </ListboxList>
-          {/* <div
-            style={{
-              padding: "10px 10px 0",
-              marginTop: 10,
-              borderTop: "1px solid gray",
-            }}
-          >
-            <p>I really like tacos. I hope you enjoy them as well!</p>
-          </div> */}
-        </ListboxPopover>
-      </ListboxInput>
+        <ListBoxOption className="FilterPosts__option" value="All">
+          All
+        </ListBoxOption>
+        {props.categories.map((category) => (
+          <ListBoxOption className="FilterPosts__option" value={category}>
+            {category}
+          </ListBoxOption>
+        ))}
+      </ListBox>
     </div>
   );
 }
