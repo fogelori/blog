@@ -1,22 +1,23 @@
-import "./App.css";
+import "./App.scss";
 import { BrowserRouter as Router } from "react-router-dom";
 import Routes from "./routes/RenderRoutes";
 import NavBar from "./components/NavBar/NavBar";
 import { AuthProvider } from "./contexts/AuthContext";
+import "src/styles/main-css-variables.scss";
 
 function App() {
   return (
     <div className="app">
-      <header className="appHeader">
-        <Router>
-          <AuthProvider>
+      <Router>
+        <AuthProvider>
+          <header className="app__header">
             <NavBar />
-            <div className="appHeadersBody">
-              <Routes />
-            </div>
-          </AuthProvider>
-        </Router>
-      </header>
+          </header>
+          <div className="app__body">
+            <Routes />
+          </div>
+        </AuthProvider>
+      </Router>
     </div>
   );
 }

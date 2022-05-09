@@ -1,6 +1,6 @@
 import { NavLink, useLocation } from "react-router-dom";
 import React from "react";
-import { useAuth } from "../../contexts/AuthContext";
+import { useAuth } from "src/contexts/AuthContext";
 
 function CustomNavLink({ children, isRequireAuth, state, to, ...rest }) {
   const { currentUser } = useAuth();

@@ -3,12 +3,13 @@
 // https://codepen.io/lucasyem/pen/ZEEYKdj
 
 import React from "react";
-import isObject from "../../tools/isObject";
+import isObject from "src/tools/isObject";
+import classNames from "classnames";
 import "./InputField.css";
 
 function InputField(props) {
   return (
-    <div className="field">
+    <div className={classNames("field", props.className)}>
       <input
         className="field__input"
         placeholder={props.placeholder}

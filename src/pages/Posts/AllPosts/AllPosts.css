@@ -1,0 +1,9 @@
+.AllPosts__category-filter {
+  font-size: 1.2em;
+}
+
+.AllPosts__cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}

@@ -22,7 +22,7 @@ function useScrolledDown() {
     var prevScrollpos = window.pageYOffset;
     const scrollCheck = debounce(() => {
       var currentScrollPos = window.pageYOffset;
-      if (prevScrollpos > currentScrollPos) {
+      if (prevScrollpos >= currentScrollPos) {
         setIsScrolledDown(false);
       } else {
         setIsScrolledDown(true);

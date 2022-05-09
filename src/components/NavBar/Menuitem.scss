@@ -1,0 +1,43 @@
+@import 'src/styles/main';
+
+/* .menuItem {
+  font-size: 16rem;
+} */
+
+/* Style the links inside the navigation bar */
+.menuItem__link {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 0.875em 1em;
+  margin: 0;
+  text-decoration: none;
+}
+
+/* Change the color of links on hover */
+.menuItem__link:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Add an active class to highlight the current page */
+.menuItem__link--active {
+  background-color: #04aa6d;
+  color: white;
+}
+
+/* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+@media screen and #{$break1} {
+  .menuItem__link:not(.menuItem__link--active) {
+    display: none;
+  }
+  .menuItem__link--clicked:not(.menuItem__link--active) {
+    display: block;
+  }
+  .menuItem--clicked {
+    float: none;
+    display: list-item;
+    text-align: left;
+  }
+}

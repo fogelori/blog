@@ -1,0 +1,14 @@
+.login {
+  padding: 1em;
+}
+
+.login__title {
+  text-align: center;
+}
+
+.login__button {
+  display: block;
+  width: 100%;
+  margin: 0.8em 0;
+  text-align: center;
+}

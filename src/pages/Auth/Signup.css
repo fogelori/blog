@@ -1,0 +1,14 @@
+.signup {
+  padding: 1em;
+}
+
+.signup__title {
+  text-align: center;
+}
+
+.signup__button {
+  display: block;
+  width: 100%;
+  margin: 0.8em 0;
+  text-align: center;
+}

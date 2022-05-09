@@ -1,20 +1,24 @@
 import React, { useState } from "react";
-import AnimatedMenuIcon from "../../icons/AnimatedMenuIcon";
-import { useGetMenuList } from "../../routes/Routes";
-import Menu from "./Menu";
-import Menuitem from "./Menuitem";
 import classNames from "classnames";
 import { useMedia } from "react-media";
-import useScrolledDown from "../../hooks/useScrolledDown";
-import { useAuth } from "../../contexts/AuthContext";
-import "./NavBar.css";
+import AnimatedMenuIcon from "src/icons/AnimatedMenuIcon";
+import { useGetMenuList } from "src/routes/Routes";
+import Menu from "./Menu";
+import Menuitem from "./Menuitem";
+import useScrolledDown from "src/hooks/useScrolledDown";
+import { useAuth } from "src/contexts/AuthContext";
+import "./NavBar.scss";
+import "src/styles/main.scss";
 
 function NavBar() {
   const { currentUser, logout } = useAuth();
   const Routes = useGetMenuList();
   const menuItems = Routes.filter((obj) => obj.isNavBarLink);
   const [open, setOpen] = useState(false);
-  const isSmallScreen = useMedia({ query: "(max-width: 600px)" });
+  const break1 = getComputedStyle(document.documentElement).getPropertyValue(
+    "--break1"
+  );
+  const isSmallScreen = useMedia({ query: break1 });
   const isScrolledDown = useScrolledDown();
 
   const handleClick = () => {

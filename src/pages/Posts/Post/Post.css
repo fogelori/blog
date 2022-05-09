@@ -1,0 +1,43 @@
+.post {
+  font-size: 16rem;
+}
+
+.post__header-properties {
+  font-size: 0.8em;
+  border-top: 1px dotted rgb(235, 235, 235);
+  border-bottom: 1px dotted rgb(235, 235, 235);
+  padding: 0.38em 0;
+  color: #979797;
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+  /* vertical-align: bottom; */
+  /* align-items: center; */
+}
+.post__header-span {
+  display: inline-block;
+  padding-inline-end: 0.8em;
+  /* vertical-align: bottom; */
+  /* vertical-align: middle; */
+  /* width: 400px;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-content: space-evenly; */
+}
+
+.post__svg {
+  vertical-align: bottom;
+  width: 1.3em;
+  height: 1.3em;
+  fill: currentColor;
+  overflow: hidden;
+}
+
+.post__body {
+  font-size: 1em;
+}
+
+.post__body--is-hide {
+  /* taken from: */
+  /* https://developer.mozilla.org/en-US/docs/Web/HTML/Element/section#examples */
+  position: absolute;
+  top: -9999px;
+  left: -9999px;
+}

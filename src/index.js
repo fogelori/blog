@@ -4,7 +4,7 @@ import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 // import "./styles/main.css";
-import "normalize.css";
+// import "normalize.css";
 // import "the-new-css-reset/css/reset.css";
 
 ReactDOM.render(

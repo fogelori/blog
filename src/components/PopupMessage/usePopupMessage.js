@@ -1,7 +1,7 @@
 import { useState } from "react";
 // import PopupMessage from "./PopupMessage";
-import { db } from "../../firebase";
 import { doc, deleteDoc } from "firebase/firestore";
+import { db } from "src/firebase";
 
 function usePopupMessage(id) {
   const [isPopupOn, setIsPopupOn] = useState(false);

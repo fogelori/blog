@@ -1,15 +1,14 @@
 .ListBox {
-    padding: 0;
-    min-width: 50px;
-    position: relative;
     font-size: 10rem;
+    padding: 0;
+    position: relative;
 }
 
 .ListBox__title {
     font-size: 1em;
     color: gray;
-    padding-left: 2px;
-    padding-right: 2px;
+    padding-left: 0.2em;
+    padding-right: 0.2em;
 }
 
 .ListBox__select, .ListBox__select:focus {
@@ -17,7 +16,7 @@
     top: -2px;
     background-color: transparent;
     border:0;
-    padding: 3px;
+    padding: 0.03em;
     outline: none;
-    min-width: 80px;
+    min-width: 15ch;
 }

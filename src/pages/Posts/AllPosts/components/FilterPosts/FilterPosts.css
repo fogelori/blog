@@ -1,0 +1,17 @@
+.FilterPosts {
+    /* font-size: 12rem; */
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 1.666em;
+}
+
+.FilterPosts__select {
+    font-size: 1em;
+}
+
+.FilterPosts__option {
+    font-size: 1em;
+    margin: 0;
+    padding: .25em .5em;
+    white-space: nowrap;
+}

@@ -1,6 +1,6 @@
 import classNames from "classnames";
 import React from "react";
-import "./Menu.css";
+import "./Menu.scss";
 
 function Menu(props) {
   const menuClass = classNames("menu", {

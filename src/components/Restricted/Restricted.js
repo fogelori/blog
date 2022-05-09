@@ -3,7 +3,7 @@
 // https://isamatov.com/react-permissions-and-roles/
 
 // import { useLocation } from "react-router-dom";
-import { useAuth } from "../../contexts/AuthContext";
+import { useAuth } from "src/contexts/AuthContext";
 import jsonData from "./permissions.json";
 
 function Restricted(props) {

@@ -4,12 +4,11 @@
 
 import React from "react";
 import { useDropzone } from "react-dropzone";
-import uploadImg from "../../assets/cloud-upload-regular-240.png";
 import classNames from "classnames";
-import { truncateText } from "../../tools/truncateText";
-// import { ReactComponent as CloseSVG } from "../../assets/close-svgrepo-com.svg";
-import { ReactComponent as CloseIcon } from "../../assets/close-svgrepo-com.svg";
-import Button from "../Button/Button";
+import uploadImg from "src/assets/cloud-upload-regular-240.png";
+import { ReactComponent as CloseIcon } from "src/assets/close-svgrepo-com.svg";
+import { truncateText } from "src/tools/truncateText";
+import { Button } from "src/elements/Forms";
 import "./DropZone.css";
 
 function DropZone(props) {
@@ -32,7 +31,7 @@ function DropZone(props) {
     multiple: false,
     onDrop: handleDrop,
   });
-  let btnClass = classNames("drop-zone", {
+  let btnClass = classNames("drop-zone", props.className, {
     "drop-zone--isDragActive": isDragActive,
     "drop-zone--isDragZoneFilled": !!props.url,
   });

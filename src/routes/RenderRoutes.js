@@ -2,9 +2,9 @@
 
 import React from "react";
 import { Routes, Route, useLocation } from "react-router-dom";
-import Modal from "../components/Modal/Modal";
+import { Modal } from "src/components";
 import { useGetMenuList } from "./Routes";
-import AuthTabs from "../views/Auth/AuthTabs";
+import AuthTabs from "src/pages/Auth/AuthTabs";
 
 function RenderRoutes() {
   let location = useLocation();

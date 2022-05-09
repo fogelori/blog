@@ -21,7 +21,7 @@ function Modal(props) {
 
   return (
     <div className="modal" onClick={handleClickOutside}>
-      <div className="modal__top-right" onClick={(e) => e.stopPropagation()}>
+      <div className="modal__center" onClick={(e) => e.stopPropagation()}>
         <span
           onClick={handleClickOutside}
           title="Close Modal"

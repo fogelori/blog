@@ -1,7 +1,7 @@
 import classNames from "classnames";
 import React from "react";
 import CustomNavLink from "../CustomNavLink/CustomNavLink";
-import "./Menuitem.css";
+import "./Menuitem.scss";
 
 function MenuItem(props) {
   // let location = useLocation();

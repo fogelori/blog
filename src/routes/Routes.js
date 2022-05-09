@@ -1,9 +1,9 @@
-import AuthTabs from "../views/Auth/AuthTabs";
-import ForgotPassword from "../views/Auth/ForgotPassword";
-import Login from "../views/Auth/Login";
-import Signup from "../views/Auth/Signup";
-import Home from "../views/Home";
-import Posts from "../views/Posts/Posts";
+import AuthTabs from "../pages/Auth/AuthTabs";
+import ForgotPassword from "../pages/Auth/ForgotPassword";
+import Login from "../pages/Auth/Login";
+import Signup from "../pages/Auth/Signup";
+import Home from "../pages/Home";
+import Posts from "../pages/Posts/Posts";
 // import { useTranslation } from "react-i18next";
 
 export const useGetMenuList = () => {

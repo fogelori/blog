@@ -1,5 +1,6 @@
 import React from "react";
-import Button from "../Button/Button";
+import { Button } from "src/elements/Forms";
+import { H1 } from "src/elements/Typography";
 import Modal from "../Modal/Modal";
 import "./PopupMessage.css";
 
@@ -11,7 +12,7 @@ function PopupMessage(props) {
   return (
     <Modal onClickOutside={props.onClickOutside}>
       <div className="card">
-        <h1>{props.title}</h1>
+        <H1>{props.title}</H1>
         <p>{props.body}</p>
         <Button onClick={props.onClickFirstButton}>{props.firstButton}</Button>
         <Button state="danger" onClick={props.onClickLastButton}>
